@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <header>
-        <p>secret: {import.meta.env.VITE_USERNAME}</p>
+        <p> secret: {import.meta.env.VITE_USERNAME}</p>
         <p>Wit0125 by {user && <span onClick={() => logOut()}>logOut</span>}</p>
         <nav>
           <Link to="/">Ana Sayfa</Link>
