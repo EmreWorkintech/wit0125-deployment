@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav a {
+  padding: .5rem 2rem;
+  border: 1px solid red;
+  border-radius: .5rem;;
+}
