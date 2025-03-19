@@ -1,20 +1,21 @@
-import './App.css';
+import "./App.css";
 import {
   Link,
   Redirect,
   Route,
   Switch,
-} from 'react-router-dom/cjs/react-router-dom.min';
-import Login from './components/Login';
-import Products from './components/Products';
-import { useContext } from 'react';
-import { UserContext } from './contexts/UserContext';
+} from "react-router-dom/cjs/react-router-dom.min";
+import Login from "./components/Login";
+import Products from "./components/Products";
+import { useContext } from "react";
+import { UserContext } from "./contexts/UserContext";
 
 function App() {
   const { user, isUserLoggedIn, logOut } = useContext(UserContext);
   return (
     <>
       <header>
+        <p>secret: {import.meta.env.VITE_USERNAME}</p>
         <p>Wit0125 by {user && <span onClick={() => logOut()}>logOut</span>}</p>
         <nav>
           <Link to="/">Ana Sayfa</Link>
